@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(15, 6, 6);
+    color: white;
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+}
+  
+body::-webkit-scrollbar-track{
+    background: rgb(29, 13, 13);
+}
+  
+body::-webkit-scrollbar-thumb{
+    background-color: beige;
+    border-radius: 20px;
+    border: 3px solid rgb(243, 184, 169);
+    transition: 1s;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(92, 92, 83);
+    border-radius: 20px;
+    border: 3px solid rgb(46, 43, 43);
+}
+
+/* Nav-bar */
+
+nav{
+    background: rgb(29, 13, 13);
+    height: 80px;
+    width: 100%;
+    filter: drop-shadow(0 0 10px black);
+}
+
+h1.logo{
+    color: rgb(255, 255, 255);
+    line-height: 80px;
+    font-size: 45px;
+    padding: 0 50px;
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    font-size: 25px;
+    background: bisque;
+    color: black;
+    padding: 0 3vw;
+    transition: all 0.8s;
+}
+
+nav ul li a:hover{
+    filter: drop-shadow(0 0 10px bisque);
+    color: rgb(41, 161, 231);
+}
+
+input{
+    display: none;
+    float: right;
+}
+
+i.fa{
+    line-height: 80px;
+    float: right;
+    margin-right: 20px;
+    display: none;
+}
+
+/* Nav-bar END */
+
+/* Name-content */
+
+.name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    margin-bottom: 10vw;
+}
+
+.text-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-text-1{
+    font-size: 2vw;
+    opacity: 50%;
+}
+
+.name-text-2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4vw;
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+
+}
+
+.name-text-3{
+    font-size: 2vw;
+    opacity: 50%;
+}
+
+.pp{
+    position: relative;
+    top: 70px;
+    right: 30px;
+    width: 29vw;
+    border-radius: 35%;
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+}
+
+/* Name-content END */
+
+/* birth-content */
+
+.birth-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    margin-bottom: 10vw;
+}
+
+.kota-mlg{
+    width: 50vw;
+    border-radius: 35%;
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+}
+
+.birth-text1{
+    font-size: 3.5vw;
+}
+
+h1.birth-text1{
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+}
+
+.birth-text1 span{
+    font-weight: 500;
+    opacity: 50%;
+    font-size: 2.5vw;
+}
+
+.date{
+    font-weight: 500;
+    opacity: 50%;
+    font-size: 1.6vw;
+    float: right;
+}
+
+/* Name-content END */
+
+/* School-content */
+
+img.logo-sklh{
+    width: 35vw;
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+}
+
+.school-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    margin-bottom: 10vw;
+}
+
+h1.school-text1{
+    font-size:3vw;
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+}
+
+.school-text1 span{
+    font-size: 2vw;
+    font-weight: 500;
+    opacity: 50%;
+    filter: none;
+}
+
+.class{
+    font-weight: 500;
+    opacity: 50%;
+    font-size: 2vw;
+    word-spacing: 10px;
+    float: right;
+    position: relative;
+    top: -20px;
+    right: 40px;
+}
+
+/* School-content END */
+
+/* Addres-content */
+
+img.map{
+    width: 45vw;
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+}
+
+.addres-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    margin-bottom: 10vw;
+}
+
+h1.addres-text1{
+    font-size:2vw;
+    filter: drop-shadow(0 0 10px rgb(41, 161, 231));
+}
+
+.addres-text1 span{
+    font-size: 2vw;
+    font-weight: 500;
+    opacity: 50%;
+    filter: none;
+}
+
+.city{
+    font-weight: 500;
+    opacity: 50%;
+    font-size: 1.5vw;
+    float: right;
+    position: relative;
+    right: 40px;
+}
+
+@media (max-width:1000px){
+    h1.logo{
+        position: absolute;
+    }
+    
+    i.fa{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(15, 15, 15);
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #name{
+        top: 150px;
+    }
+}
+
+@media (max-width:600px){
+    h1.logo{
+        font-size: 40px;
+        padding: 0 15px;
+        position: absolute;
+    }
+    
+    i.fa{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(15, 15, 15);
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    nav ul li a{
+        padding: 0 10vw;
+        font-size: 5vw;
+    }
+}
+
+
